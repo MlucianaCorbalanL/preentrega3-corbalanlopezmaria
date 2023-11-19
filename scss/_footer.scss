@@ -1,3 +1,10 @@
+/*extend*/
+.baseEstilos {
+  margin: 5px 0;
+  font-size: $tamaño-p;
+}
+
+/*footer*/
 .footer {
   background-color: $color-negro;
   color: $color-blanco;
@@ -18,13 +25,11 @@
 }
 
 .infoContacto p {
-  margin: 5px 0;
-  font-size: $tamaño-p;
+  @extend .baseEstilos;
 }
 
 .redesSociales a {
-  margin: 5px 0;
-  font-size: $tamaño-p;
+  @extend.baseEstilos;
   color: $color-beige;
   text-decoration: none;
   margin-right: 10px;

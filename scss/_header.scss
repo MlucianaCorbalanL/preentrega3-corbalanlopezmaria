@@ -1,4 +1,13 @@
-.encabezado {
+/*extend*/
+
+%base-estilos {
+  text-decoration: none;
+  margin: 10px;
+}
+
+/*header*/
+
+ .encabezado {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -6,6 +15,7 @@
   box-shadow: 0px 2px 4px $color-marron;
 
   h1 {
+    @extend %base-estilos;
     color: $color-naranja;
     text-transform: uppercase;
     font-weight: 700px;
@@ -18,9 +28,8 @@
     display: inline-block;
 
     a {
-      text-decoration: none;
-      margin: 10px;
-      color: $color-marronclaro;
+      @extend %base-estilos;
+      color: r$color-marronclaro;
       font-size: $tamaño-h4;
 
       &:hover {
