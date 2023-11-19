@@ -1,0 +1,22 @@
+.pasteleros {
+  text-align: center;
+  margin: 10vh;
+  box-shadow: 0px 2px 4px $color-marron;
+
+  h3 {
+    color: $color-naranja;
+    text-transform: uppercase;
+    font-size: $tamaño-h3;
+  }
+
+  p {
+    font-size: $tamaño-h4;
+    color: $color-marronclaro;
+    padding: 10px;
+  }
+}
+
+.contenedorPasteleros {
+  display: flex;
+  margin: 10vh;
+}

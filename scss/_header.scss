@@ -1,0 +1,31 @@
+.encabezado {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  box-shadow: 0px 2px 4px $color-marron;
+
+  h1 {
+    color: $color-naranja;
+    text-transform: uppercase;
+    font-weight: 700px;
+    text-shadow: 1px 1px 2px $color-marron;
+    font-size: $tamaño-encabezado;
+  }
+
+  li {
+    list-style-type: none;
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+      margin: 10px;
+      color: $color-marronclaro;
+      font-size: $tamaño-h4;
+
+      &:hover {
+        color: $color-marronclaro;
+      }
+    }
+  }
+}

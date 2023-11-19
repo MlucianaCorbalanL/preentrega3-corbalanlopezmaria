@@ -1,0 +1,64 @@
+.contacto {
+  text-align: center;
+  margin: 10vh;
+  box-shadow: 0px 2px 4px $color-marron;
+
+  h3 {
+    color: $color-naranja;
+    text-transform: uppercase;
+    font-size: $tamaño-h3;
+  }
+
+  p {
+    font-size: $tamaño-h4;
+    color: $color-marronclaro;
+    padding: 10px;
+  }
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: $color-blanco;
+  color: $color-marronclaro;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  background-color: $color-blanco;
+  color: $color-marronclaro;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  background-color: $color-blanco;
+  color: $color-marronclaro;
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  background-color: $color-blanco;
+  color: $color-marronclaro;
+  resize: vertical;
+  color: $color-marronclaro;
+}
+
+.btnFormulario {
+  background-color: $color-blanco;
+  color: $color-naranja;
+  padding: 10px 15px;
+  border: $color-marron;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-beige;
+  }
+}
