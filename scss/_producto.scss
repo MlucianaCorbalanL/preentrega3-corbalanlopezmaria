@@ -1,18 +1,33 @@
-.productos {
+/*mixins*/
+@mixin estilo-comun {
   text-align: center;
-  margin: 10vh;
   box-shadow: 0px 2px 4px $color-marron;
+}
+
+@mixin estilos-titulos {
+  color: $color-naranja;
+  text-transform: uppercase;
+  font-size: $tamaño-h3;
+}
+
+@mixin estilos-parrafos {
+  font-size: $tamaño-h4;
+  color: $color-marronclaro;
+  padding: 10px;
+}
+
+/*productos*/
+
+.productos {
+  @include estilo-comun;
+  margin: 10vh;
 
   h3 {
-    color: $color-naranja;
-    text-transform: uppercase;
-    font-size: $tamaño-h3;
+    @include estilos-titulos;
   }
 
   p {
-    font-size: $tamaño-h4;
-    color: $color-marronclaro;
-    padding: 10px;
+    @include estilos-parrafos;
   }
 }
 
@@ -37,16 +52,15 @@
   background-color: $color-blanco;
   border: 1px solid $color-marron;
   padding: 20px;
-  box-shadow: 0px 2px 4px $color-marron;
   margin: 10px;
+  @include estilo-comun;
 
   img {
     max-width: 100%;
   }
 
   p {
-    text-align: center;
-    margin: 10px 0;
+    @include estilos-parrafos;
     color: $color-naranjaclaro;
   }
 

@@ -1,6 +1,12 @@
-.pasteleros {
+/*mixins*/
+@mixin estilos-comunes {
   text-align: center;
   margin: 10vh;
+}
+
+/*pasteleros*/
+.pasteleros {
+  @include estilos-comunes;
   box-shadow: 0px 2px 4px $color-marron;
 
   h3 {
@@ -17,6 +23,6 @@
 }
 
 .contenedorPasteleros {
+  @include estilos-comunes;
   display: flex;
-  margin: 10vh;
 }

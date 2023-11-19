@@ -1,22 +1,42 @@
-.recetas {
+/*mixins*/
+@mixin estilos-comunes {
   text-align: center;
   margin: 10vh;
-  box-shadow: 0px 2px 4px $color-marron;
+}
 
-  h3 {
-    color: $color-naranja;
-    text-transform: uppercase;
-    font-size: $tamaño-h3;
+@mixin sombra {
+  box-shadow: 0px 2px 4px $color-marron;
+}
+
+@mixin estilos-de-encabezado {
+  color: $color-naranja;
+  text-transform: uppercase;
+  font-size: $tamaño-h3;
+}
+
+@mixin estilos-de-parrafo {
+  font-size: $tamaño-h4;
+  color: $color-marronclaro;
+  padding: 10px;
+}
+
+/*recetas*/
+.recetas {
+  @include estilos-comunes;
+  @include sombra;
+
+ h3 {
+    @include estilos-de-encabezado;
   }
 
   p {
-    font-size: $tamaño-h4;
-    color: $color-marronclaro;
-    padding: 10px;
+    @include estilos-de-parrafo;
   }
 }
 
 iframe {
+  @include sombra;
+  @include estilos-comunes;
   display: block;
   margin: auto;
 }
